@@ -37,7 +37,9 @@
                     </div>
                     <div class="mdui-container" style="padding:20px 35px">
                         <!-- TODO: add a send button to send message -->
-
+                        <button class="mdui-btn mdui-color-theme mdui-ripple"
+                                onclick="sendMsgToServer()">Send
+                        </button>
                         <button class="mdui-btn mdui-color-theme mdui-ripple"
                                 onclick="clearMsg()">Clear
                         </button>
@@ -104,7 +106,7 @@
             }else{
                 $messageContainer.append(
                     '<div style="margin: 10px auto;">' +
-                    '<div class="mdui-card-primary">' +
+                    '<div class="mdui-card-primary" style="height:15px;">' +
                     '<div class="mdui-card-content message-content" style="color: grey;font-style: italic">' + message.username + " " + message.content + '</div>' +
                     '</div></div>');
             }
