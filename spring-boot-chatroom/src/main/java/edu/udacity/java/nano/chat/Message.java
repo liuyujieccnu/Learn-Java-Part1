@@ -3,6 +3,7 @@ package edu.udacity.java.nano.chat;
 /**
  * WebSocket message model
  */
+//此处完成的消息实体模型，每个参数都要建立getter和setter
 public class Message {
     // TODO: add message model.
     private String content;
